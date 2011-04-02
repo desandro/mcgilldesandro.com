@@ -114,7 +114,7 @@ Wedder.prototype.radialType = function ( elem, dir ) {
   // get width of elem
   
   var charWidths = [],
-      padding = 3,
+      padding = 4,
       y = 170 * dir,
       angle = 0,
       charAngles = [];

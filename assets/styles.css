@@ -31,6 +31,7 @@ b { font-weight: normal; }
 
 /* Mostra Nuova */
 h1 .name
+,#header .amp
 ,#header .married
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
@@ -40,17 +41,26 @@ h1 .name
 /* Veer Annabelle */
 
 .foo
-
 {
   font-family: 'Annabelle', "jbt-annabelle-1","jbt-annabelle-2", serif;
 }
 
 /* Hellenic Wide */
 
-#header .amp
+.foo
+,#header .secondary .bottom
 
 {
   font-family: 'Hellenic Wide', "hellenic-wide-1","hellenic-wide-2", serif;
+}
+
+
+/* Mittwoch */
+.foo
+,#header .secondary .top
+
+{
+  font-family: "mittwoch-1","mittwoch-2";
 }
 
 
@@ -58,7 +68,6 @@ h1 .name
 h1 .name
 ,#header .married
 {
-  text-transform: uppercase;
 }
 
 
@@ -96,7 +105,8 @@ h1 .name
   line-height: 70px;
   left: 50%;
   top: 50%;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .csstransforms #header .name .char {
@@ -108,23 +118,64 @@ h1 .name
 
 .csstransforms #header .amp {
   display: block;
-  font-size: 210px;
+  font-size: 300px;
   text-align: center;
-  line-height: 360px;
-  font-weight: 100;
+  line-height: 340px;
+  font-weight: 400;
   position: absolute;
+  top: 40px;
   width: 100%;
-  color: hsla( 0, 0%, 0%, 0.1 );
+  color: hsla( 0, 0%, 0%, 0.05 );
 }
 
 .csstransforms #header .married {
   text-align: center;
-  top: 130px;
   position: absolute;
+  background: hsla( 0, 0%, 50%, 0.0 );
+/*  border-radius: 120px;*/
+/*  left: 280px;*/
+  top: 130px;
+  left: 5px;
   width: 100%;
-  font-size: 30px;
-  letter-spacing: 0.4em;
-  line-height: 45px;
+/*  border: 2px solid black;*/
+/*  left: 5px;*/
+  position: absolute;
+  font-size: 25px;
+  letter-spacing: 0.8em;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+/*  width: 240px;
+  height: 240px;*/
 }
 
-.csstransforms #header .married i { display: block; }
+/*.csstransforms #header .married .were { margin-top: 55px;}*/
+
+.csstransforms #header .married i {
+  display: block; 
+  padding-left: 5px;
+}
+
+#header .secondary {
+  width: 250px;
+  position: absolute;
+  top: 00px;
+  text-align: center;
+}
+
+#header .location {
+  right: 0;
+}
+
+
+#header .secondary span {
+  display: block;
+}
+
+#header .secondary .top { 
+  font-size: 20px; 
+/*  text-transform: uppercase;*/
+  font-weight: 800;
+  font-style: italic;
+}
+#header .secondary .bottom { font-size: 30px; }
