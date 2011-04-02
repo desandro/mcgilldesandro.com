@@ -1,22 +1,97 @@
+/******* Reset *******/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 blocks */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/******* Fonts *******/
+
 
 /* Mostra Nuova */
-h1 .erin,
-h1 .david {
+h1 .name
+,#header .amp
+{
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
 }
 
 /* Veer Annabelle */
 
-header .amp 
+
+#header .married
 {
   font-family: 'Annabelle', "jbt-annabelle-1","jbt-annabelle-2", serif;
 }
 
-h1 .erin,
-h1 .david {
+h1 .name {
   font-weight: 400;
   text-transform: uppercase;
 }
 
-header .amp { font-weight: 200;}
+header .amp { font-weight: 200; }
+
+
+/******* base *******/
+
+#wrap {
+  width: 800px;
+  margin: 20px auto;
+}
+
+
+/******* CSS transforms header *******/
+
+.csstransforms #header h1 {
+  width: 400px;
+  height: 400px;
+  background: hsla( 30, 100%, 50%, 0.1 );
+  margin: 0 auto;
+  position: relative;
+}
+
+.csstransforms #header .name {
+  position: absolute;
+  font-size: 60px;
+  line-height: 70px;
+  left: 50%;
+  top: 50%;
+}
+
+.csstransforms #header .david { display: none; }
+
+.csstransforms #header .name .char {
+  position: absolute;
+  display: block;
+  background: hsla( 240, 100%, 30%, 0.2 );
+  top: -0.5em;;
+  -webkit-transform-origin: center center;
+     -moz-transform-origin: 0 0;
+       -o-transform-origin: 0 0;
+}
+
+.csstransforms #header .amp {
+  display: block;
+  font-size: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-weight: 100;
+}
