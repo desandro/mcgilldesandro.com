@@ -1,0 +1,22 @@
+
+/* Mostra Nuova */
+h1 .erin,
+h1 .david {
+  font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
+  
+}
+
+/* Veer Annabelle */
+
+header .amp 
+{
+  font-family: 'Annabelle', "jbt-annabelle-1","jbt-annabelle-2", serif;
+}
+
+h1 .erin,
+h1 .david {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header .amp { font-weight: 200;}
