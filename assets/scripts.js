@@ -110,11 +110,12 @@ Wedder.prototype.parseCharacters = function( elem ) {
   
 };
 
-Wedder.prototype.radialType = function ( elem, y, theta ) {
+Wedder.prototype.radialType = function ( elem, dir ) {
   // get width of elem
   
   var charWidths = [],
-      padding = 6,
+      padding = 3,
+      y = 170 * dir,
       angle = 0,
       charAngles = [];
   
@@ -130,11 +131,17 @@ Wedder.prototype.radialType = function ( elem, y, theta ) {
     
     angle += Math.atan( (w/2 + padding) / y ) * -1;
     
+    charAngles.push( angle );
+    
     charSpan.style.left = (w * -0.5) + 'px';
     charSpan.transform('rotate(' + (angle) + 'rad) translate(' + 0 + 'px, ' + y + 'px)');
 
 
   };
+  
+  var elemAngle = -angle/2 - charAngles[0]/2;
+  
+  elem.transform('rotate(' + elemAngle + 'rad)')
   
   
   
@@ -154,7 +161,8 @@ Wedder.prototype.radialType = function ( elem, y, theta ) {
 
 Wedder.prototype.fontsReady = function() {
   
-  this.radialType( this.erinElem, -170 );
+  this.radialType( this.erinElem, -1 );
+  this.radialType( this.davidElem, 1 );
   
   
 };

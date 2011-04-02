@@ -23,12 +23,15 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+i { font-style: normal; }
+b { font-weight: normal; }
+
 /******* Fonts *******/
 
 
 /* Mostra Nuova */
 h1 .name
-,#header .amp
+,#header .married
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -36,18 +39,27 @@ h1 .name
 
 /* Veer Annabelle */
 
+.foo
 
-#header .married
 {
   font-family: 'Annabelle', "jbt-annabelle-1","jbt-annabelle-2", serif;
 }
 
-h1 .name {
-  font-weight: 400;
-  text-transform: uppercase;
+/* Hellenic Wide */
+
+#header .amp
+
+{
+  font-family: 'Hellenic Wide', "hellenic-wide-1","hellenic-wide-2", serif;
 }
 
-header .amp { font-weight: 200; }
+
+
+h1 .name
+,#header .married
+{
+  text-transform: uppercase;
+}
 
 
 /******* base *******/
@@ -60,38 +72,59 @@ header .amp { font-weight: 200; }
 
 /******* CSS transforms header *******/
 
+#header {
+  position: relative;
+}
+
+#header .married {
+  font-weight: 300;
+}
+
+/******* CSS transforms header *******/
+
 .csstransforms #header h1 {
   width: 400px;
   height: 400px;
-  background: hsla( 30, 100%, 50%, 0.1 );
+/*  background: hsla( 30, 100%, 50%, 0.1 );*/
   margin: 0 auto;
   position: relative;
 }
 
 .csstransforms #header .name {
   position: absolute;
-  font-size: 60px;
+  font-size: 54px;
   line-height: 70px;
   left: 50%;
   top: 50%;
+  font-weight: 600;
 }
-
-.csstransforms #header .david { display: none; }
 
 .csstransforms #header .name .char {
   position: absolute;
   display: block;
-  background: hsla( 240, 100%, 30%, 0.2 );
-  top: -0.5em;;
-  -webkit-transform-origin: center center;
-     -moz-transform-origin: 0 0;
-       -o-transform-origin: 0 0;
+/*  background: hsla( 240, 100%, 30%, 0.2 );*/
+  top: -35px;
 }
 
 .csstransforms #header .amp {
   display: block;
-  font-size: 300px;
+  font-size: 210px;
   text-align: center;
-  line-height: 400px;
+  line-height: 360px;
   font-weight: 100;
+  position: absolute;
+  width: 100%;
+  color: hsla( 0, 0%, 0%, 0.1 );
 }
+
+.csstransforms #header .married {
+  text-align: center;
+  top: 130px;
+  position: absolute;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 0.4em;
+  line-height: 45px;
+}
+
+.csstransforms #header .married i { display: block; }
