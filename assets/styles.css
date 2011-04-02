@@ -32,7 +32,8 @@ b { font-weight: normal; }
 /* Mostra Nuova */
 h1 .name
 ,#header .amp
-,#header .married
+,#header .married,
+body
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -48,7 +49,7 @@ h1 .name
 /* Hellenic Wide */
 
 .foo
-,#header .secondary .bottom
+/*,#header .secondary .bottom*/
 
 {
   font-family: 'Hellenic Wide', "hellenic-wide-1","hellenic-wide-2", serif;
@@ -57,7 +58,7 @@ h1 .name
 
 /* Mittwoch */
 .foo
-,#header .secondary .top
+/*,#header .secondary .top*/
 
 {
   font-family: "mittwoch-1","mittwoch-2";
@@ -72,6 +73,11 @@ h1 .name
 
 
 /******* base *******/
+
+body {
+  background: #FFFAF2;
+  color: #615;
+}
 
 #wrap {
   width: 800px;
@@ -125,7 +131,8 @@ h1 .name
   position: absolute;
   top: 40px;
   width: 100%;
-  color: hsla( 0, 0%, 0%, 0.05 );
+/*  color: hsla( 0, 0%, 0%, 0.05 );*/
+  color: #EC8;
 }
 
 .csstransforms #header .married {
@@ -157,10 +164,13 @@ h1 .name
 }
 
 #header .secondary {
-  width: 250px;
+  width: 190px;
   position: absolute;
-  top: 00px;
+  top: 140px;
   text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px 0;
 }
 
 #header .location {
@@ -173,9 +183,21 @@ h1 .name
 }
 
 #header .secondary .top { 
-  font-size: 20px; 
-/*  text-transform: uppercase;*/
-  font-weight: 800;
-  font-style: italic;
+  font-size: 24px; 
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: #615;
+/*  font-style: italic;*/
 }
-#header .secondary .bottom { font-size: 30px; }
+#header .secondary .bottom {
+  font-size: 26px; 
+  font-weight: 300;
+  letter-spacing: 0.6em;
+}
+
+#header .secondary sup {
+  font-size: 0.6em;
+  vertical-align: top;
+}
