@@ -84,8 +84,13 @@ Wedder.prototype.DOMContentLoaded = function( event ) {
   this.dateElem = header.querySelector('.date');
   this.locationElem = header.querySelector('.location');
   
+  this.marriedTopElem = header.querySelector('.married .top');
+  this.marriedBottomElem = header.querySelector('.married .bottom');
+  
   this.parseCharacters( this.dateElem );
   this.parseCharacters( this.locationElem );
+  this.parseCharacters( this.marriedTopElem );
+  this.parseCharacters( this.marriedBottomElem );
   
   
 };
@@ -117,12 +122,10 @@ Wedder.prototype.parseCharacters = function( elem ) {
   
 };
 
-Wedder.prototype.radialType = function ( elem, dir ) {
+Wedder.prototype.radialType = function ( elem, y, padding ) {
   // get width of elem
   
   var charWidths = [],
-      padding = 6,
-      y = 180 * dir,
       angle = 0,
       charAngles = [];
   
@@ -155,8 +158,10 @@ Wedder.prototype.radialType = function ( elem, dir ) {
 
 Wedder.prototype.fontsReady = function() {
   
-  this.radialType( this.dateElem, -1 );
-  this.radialType( this.locationElem, 1 );
+  this.radialType( this.dateElem, -180, 6 );
+  this.radialType( this.locationElem, 180, 6 );
+  this.radialType( this.marriedTopElem, -150, 3 );
+  this.radialType( this.marriedBottomElem, 150, 3 );
   
   
 };

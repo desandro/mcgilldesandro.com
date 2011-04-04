@@ -37,6 +37,8 @@ body {
 .foo
 ,#header .secondary
 ,#story .jmu
+,#story h2 span
+,#header .married
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -55,9 +57,8 @@ body {
 
 .foo
 ,#header h1 .amp
-,#story h2
+/*,#story .married*/
 ,#story .roosevelt
-/*,#header .secondary .bottom*/
 
 {
   font-family: 'Hellenic Wide', "hellenic-wide-1","hellenic-wide-2", serif;
@@ -68,6 +69,7 @@ body {
 .foo
 /*,#header .secondary .top*/
 ,#story .dc
+,#story h2 b
 {
   font-family: 'Mittwoch' "mittwoch-1","mittwoch-2";
 }
@@ -90,6 +92,7 @@ body {
 body {
   background: #FFFAF2;
   color: #615;
+  font-size: 16px;
 }
 
 #wrap {
@@ -104,9 +107,6 @@ body {
   position: relative;
 }
 
-#header .married {
-  font-weight: 300;
-}
 
 /******* CSS transforms header *******/
 
@@ -148,31 +148,27 @@ body {
 /*  top: 40px;*/
   width: 100%;  
 /*  color: hsla( 0, 0%, 0%, 0.05 );*/
-  color: #EC8;
+  color: #DC8;
 /*  color: #F5E2BC;*/
   top: 0;
 }
 
 .csstransforms #header .married {
-  display: none;
-  text-align: center;
   position: absolute;
-  background: hsla( 0, 0%, 50%, 0.0 );
-/*  border-radius: 120px;*/
-/*  left: 280px;*/
-  top: 130px;
-  left: 5px;
-  width: 100%;
-/*  border: 2px solid black;*/
-/*  left: 5px;*/
-  position: absolute;
-  font-size: 25px;
-  letter-spacing: 0.8em;
-  line-height: 40px;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-/*  width: 240px;
-  height: 240px;*/
+  color: #DC8;
+}
+
+.csstransforms #header .married .char {
+  position: absolute;
+  display: block;
+  top: -15px;
+  line-height: 30px;
 }
 
 /*.csstransforms #header .married .were { margin-top: 55px;}*/
@@ -212,8 +208,8 @@ body {
 /* Story */
 
  
-#story h2 {
-  color: #EC8;
+/*#story .married {
+  color: #DC8;
   border-top: 4px solid;
   border-bottom: 4px solid;
   font-size: 44px;
@@ -221,19 +217,54 @@ body {
   margin-bottom: 40px;
   line-height: 1.0em;
   text-transform: uppercase;
-/*  font-style: italic;*/
-/*  letter-spacing: 0.2em;*/
-/*  font-weight: 800;*/
 }
 
-/*#story h2 b { font-weight: 800;}*/
 
-#story h2 b {
+#story .married b {
   display: block;
   font-size: 70px;
   line-height: 1.0em;
-/*  font-weight: 800;*/
-/*  letter-spacing: 0.2em;*/
+}*/
+
+#story h2 {
+/*  border-top: 2px solid;*/
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  margin-bottom: 40px;
+}
+
+#story p {
+  
+}
+
+#story p span {
+  display: block;
+  line-height: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#story h2 span {
+  display: block;
+  font-size: 30px;
+  letter-spacing: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.2em;
+  padding:  12px 0 12px 0.5em;
+}
+
+#story h2 b {
+  display: block;
+  text-align: center;
+/*  text-transform: capitalize;*/
+  font-weight: 700;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 1.0em;
+/*  font-style: italic;*/
 }
 
 #story i {
@@ -241,22 +272,25 @@ body {
   text-align: block;
   font-size: 53px;
   text-align: center;
-  color: #EC8;
+  color: #DC8;
 }
 
 #story .jmu {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 92px;
+  font-size: 86px;
+  line-height: 1.2em;
 }
 
 #story .jmu span {
   display: block;
-  font-size: 40px;
+  font-size: 38px;
+  line-height: 1.2em;
   letter-spacing: 1.2em;
   font-weight: 700;
   text-align: center;
-  padding-left: 0.4em;
+  padding-left: 1.0em;
+  font-style: normal;
 }
 
 #story .london {
@@ -268,6 +302,11 @@ body {
 #story .dc {
   font-size: 62px;
   font-weight: 800;
-  font-style: italic;
+  line-height: 1.2em;
+/*  font-style: italic;*/
 }
 
+#story .roosevelt {
+  text-transform: uppercase;
+  line-height: 1.0em;
+}
