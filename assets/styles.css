@@ -44,15 +44,6 @@ body {
   
 }
 
-/*{ font-family: georgia;}*/
-
-/* Veer Annabelle */
-
-.foo
-{
-  font-family: 'Annabelle', "jbt-annabelle-1","jbt-annabelle-2", serif;
-}
-
 /* Hellenic Wide */
 
 .foo
@@ -97,7 +88,11 @@ body {
 
 #wrap {
   width: 660px;
-  margin: 20px auto;
+  margin: 460px auto 20px;
+  position: relative;
+  z-index: 100;
+  background: hsla(37, 100%, 97%, 0.95);
+  border-top: 1px solid;
 }
 
 
@@ -107,6 +102,12 @@ body {
   position: relative;
 }
 
+#fixie {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 /******* CSS transforms header *******/
 
@@ -114,9 +115,9 @@ body {
 /*  width: 400px;*/
   height: 400px;
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
-  margin: 0 auto 40px;
+  margin: 0 auto;
   position: relative;
-  
+  width: 660px;
 }
 
 .csstransforms #header h1 {
@@ -157,9 +158,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #DC8;
 }
