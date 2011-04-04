@@ -160,8 +160,8 @@ Wedder.prototype.fontsReady = function() {
   
   this.radialType( this.dateElem, -180, 6 );
   this.radialType( this.locationElem, 180, 6 );
-  this.radialType( this.marriedTopElem, -145, 4 );
-  this.radialType( this.marriedBottomElem, 145, 6 );
+  this.radialType( this.marriedTopElem, -147, 4 );
+  this.radialType( this.marriedBottomElem, 147, 6 );
   
   
 };
