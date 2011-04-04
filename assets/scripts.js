@@ -74,14 +74,18 @@ Wedder.prototype.handleEvent = function( event ) {
 // init
 Wedder.prototype.DOMContentLoaded = function( event ) {
   
-  var h1 = document.querySelector('#header h1');
+  var h1 = document.querySelector('#header h1'),
+      header = document.getElementById('header');
   
   
   this.erinElem = h1.querySelector('.erin'),
   this.davidElem = h1.querySelector('.david');
   
-  this.parseCharacters( this.erinElem );
-  this.parseCharacters( this.davidElem );
+  this.dateElem = header.querySelector('.date');
+  this.locationElem = header.querySelector('.location');
+  
+  this.parseCharacters( this.dateElem );
+  this.parseCharacters( this.locationElem );
   
   
 };
@@ -117,8 +121,8 @@ Wedder.prototype.radialType = function ( elem, dir ) {
   // get width of elem
   
   var charWidths = [],
-      padding = 4,
-      y = 170 * dir,
+      padding = 6,
+      y = 180 * dir,
       angle = 0,
       charAngles = [];
   
@@ -151,8 +155,8 @@ Wedder.prototype.radialType = function ( elem, dir ) {
 
 Wedder.prototype.fontsReady = function() {
   
-  this.radialType( this.erinElem, -1 );
-  this.radialType( this.davidElem, 1 );
+  this.radialType( this.dateElem, -1 );
+  this.radialType( this.locationElem, 1 );
   
   
 };

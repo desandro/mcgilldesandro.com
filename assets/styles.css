@@ -30,14 +30,16 @@ b { font-weight: normal; }
 
 
 /* Mostra Nuova */
-h1 .name
-,#header .amp
-,#header .married,
-body
+.foo
+,#header .married
+
+,body
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
 }
+
+/*{ font-family: georgia;}*/
 
 /* Veer Annabelle */
 
@@ -49,6 +51,7 @@ body
 /* Hellenic Wide */
 
 .foo
+,#header h1 .amp 
 /*,#header .secondary .bottom*/
 
 {
@@ -64,12 +67,16 @@ body
   font-family: "mittwoch-1","mittwoch-2";
 }
 
-
-
-h1 .name
-,#header .married
+/* Bickham Script pro */
+.foo
+,#header h1
 {
+  font-family: 'Bickham Script Pro', "bickham-script-pro-1","bickham-script-pro-2", serif;
 }
+
+
+
+
 
 
 /******* base *******/
@@ -97,45 +104,50 @@ body {
 
 /******* CSS transforms header *******/
 
-.csstransforms #header h1 {
-  width: 400px;
+.csstransforms #header {
+/*  width: 400px;*/
   height: 400px;
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
   margin: 0 auto;
   position: relative;
+  
+}
+
+.csstransforms #header h1 {
 }
 
 .csstransforms #header .name {
-  position: absolute;
-  font-size: 54px;
-  line-height: 70px;
-  left: 50%;
-  top: 50%;
-  font-weight: 700;
-  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 0.7em;
 }
 
-.csstransforms #header .name .char {
-  position: absolute;
-  display: block;
-/*  background: hsla( 240, 100%, 30%, 0.2 );*/
-  top: -35px;
+.csstransforms #header .erin {
+  padding-top: 120px;
 }
+
+
 
 .csstransforms #header .amp {
   display: block;
   font-size: 300px;
   text-align: center;
-  line-height: 340px;
-  font-weight: 400;
+  line-height: 350px;
   position: absolute;
-  top: 40px;
-  width: 100%;
+/*  top: 40px;*/
+  width: 100%;  
 /*  color: hsla( 0, 0%, 0%, 0.05 );*/
   color: #EC8;
+/*  color: #F5E2BC;*/
+  top: 0;
 }
 
 .csstransforms #header .married {
+  display: none;
   text-align: center;
   position: absolute;
   background: hsla( 0, 0%, 50%, 0.0 );
@@ -164,40 +176,30 @@ body {
 }
 
 #header .secondary {
-  width: 190px;
   position: absolute;
-  top: 140px;
-  text-align: center;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding: 10px 0;
-}
-
-#header .location {
-  right: 0;
-}
-
-
-#header .secondary span {
-  display: block;
-}
-
-#header .secondary .top { 
-  font-size: 24px; 
-  letter-spacing: 0.08em;
+  top: 50%;
+  left: 50%;
   text-transform: uppercase;
-  font-weight: 700;
-  padding-bottom: 5px;
-  color: #615;
-/*  font-style: italic;*/
-}
-#header .secondary .bottom {
-  font-size: 26px; 
-  font-weight: 300;
-  letter-spacing: 0.6em;
+  font-weight: 900;
+  font-size: 20px;
 }
 
-#header .secondary sup {
-  font-size: 0.6em;
-  vertical-align: top;
+/*#header .location {
+  right: 0;
+}*/
+
+
+/*#header .secondary span {
+  display: block;
+}*/
+
+
+.csstransforms #header .secondary .char {
+  position: absolute;
+  display: block;
+/*  background: hsla( 240, 100%, 30%, 0.2 );*/
+  top: -20px;
+  line-height: 40px;
 }
+
+
