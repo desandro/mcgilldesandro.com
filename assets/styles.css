@@ -37,8 +37,10 @@ body {
 .foo
 ,#header .secondary
 ,#story .jmu
-,#story h2 span
+,section h2 span
 ,#header .married
+,#wedding div h3
+,#wedding div h4
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -60,7 +62,7 @@ body {
 .foo
 /*,#header .secondary .top*/
 ,#story .dc
-,#story h2 b
+,section h2 b
 {
   font-family: 'Mittwoch' "mittwoch-1","mittwoch-2";
 }
@@ -88,11 +90,10 @@ body {
 
 #wrap {
   width: 660px;
-  margin: 460px auto 20px;
+  margin: 20px auto 20px;
   position: relative;
   z-index: 100;
   background: hsla(37, 100%, 97%, 0.95);
-  border-top: 1px solid;
 }
 
 
@@ -115,7 +116,7 @@ body {
 /*  width: 400px;*/
   height: 400px;
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
-  margin: 0 auto;
+  margin: 0 auto 40px;
   position: relative;
   width: 660px;
 }
@@ -206,9 +207,44 @@ body {
   line-height: 40px;
 }
 
-/* Story */
+/******* Section headers ********/
 
- 
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+section h2 span {
+  display: block;
+  font-size: 30px;
+  letter-spacing: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 50px;
+  padding-left: 0.5em;
+}
+
+section h2 b {
+  display: block;
+  text-align: center;
+/*  text-transform: capitalize;*/
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+  line-height: 1.0em;
+/*  font-style: italic;*/
+}
+
+/******* Story ********/
+
+
 /*#story .married {
   color: #DC8;
   border-top: 4px solid;
@@ -227,16 +263,7 @@ body {
   line-height: 1.0em;
 }*/
 
-#story h2 {
-/*  border-top: 2px solid;*/
-  padding-bottom: 20px;
-  border-bottom: 1px solid;
-  margin-bottom: 40px;
-}
 
-#story p {
-  
-}
 
 #story p span {
   display: block;
@@ -246,27 +273,7 @@ body {
   margin-bottom: 0.5em;
 }
 
-#story h2 span {
-  display: block;
-  font-size: 30px;
-  letter-spacing: 0.9em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 1.2em;
-  padding:  12px 0 12px 0.5em;
-}
 
-#story h2 b {
-  display: block;
-  text-align: center;
-/*  text-transform: capitalize;*/
-  font-weight: 700;
-  font-size: 80px;
-  text-transform: uppercase;
-  line-height: 1.0em;
-/*  font-style: italic;*/
-}
 
 #story i {
   display: block;
@@ -295,7 +302,7 @@ body {
 }
 
 #story .london {
-  font-size: 200px;
+  font-size: 170px;
   font-weight: 700;
   line-height: 120px;
 }
@@ -310,4 +317,51 @@ body {
 #story .roosevelt {
   text-transform: uppercase;
   line-height: 1.0em;
+}
+
+/******* Wedding ********/
+
+#wedding {
+  overflow: auto;
+}
+
+#wedding div {
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+
+#ceremony {
+  margin-right: 60px;
+}
+
+#wedding div h3 {
+  color: #DC8;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#wedding div h3 * { display: block; }
+
+#wedding div h3 b {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+#wedding div h3 span {
+  letter-spacing: 0.5em;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#wedding div h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-variant: small-caps;
+} 
+
+#wedding div p span {
+  display: block;
 }
