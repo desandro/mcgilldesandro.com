@@ -42,6 +42,7 @@ body {
 ,#wedding div h3
 ,#wedding div h4
 ,.coming-soon
+,#wedding div h5
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -84,17 +85,19 @@ body {
 /******* base *******/
 
 body {
-  background: #FFFAF2;
+  background: #FEFDFC url('vic-wallpaper-wedding.png') center top;
   color: #615;
   font-size: 16px;
 }
 
 #wrap {
   width: 660px;
-  margin: 20px auto 20px;
+  margin: 0px auto 0px;
   position: relative;
   z-index: 100;
-  background: hsla(37, 100%, 97%, 0.95);
+  padding: 20px;
+  background: #FEFDFC;
+  background: hsla( 30, 50%, 99%, 0.4);
 }
 
 
@@ -151,9 +154,9 @@ body {
 /*  top: 40px;*/
   width: 100%;  
 /*  color: hsla( 0, 0%, 0%, 0.05 );*/
-  color: #DC8;
-  color: #F5E2BC;
-
+/*  color: #DC8;*/
+/*  color: #F5E2BC;*/
+  color: #E6DCB3;
   top: 0;
 }
 
@@ -288,13 +291,13 @@ section h2 b {
 #story .jmu {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 72px;
+  font-size: 54px;
   line-height: 1.2em;
 }
 
 #story .jmu span {
   display: block;
-  font-size: 31px;
+  font-size: 24px;
   line-height: 1.2em;
   letter-spacing: 1.2em;
   font-weight: 700;
@@ -304,19 +307,19 @@ section h2 b {
 }
 
 #story .london {
-  font-size: 170px;
+  font-size: 110px;
   font-weight: 700;
-  line-height: 120px;
+  line-height: 0.7em;
 }
 
 #story .dc {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 800;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 #story .roosevelt {
-  font-size: 48px;
+  font-size: 38px;
   text-transform: uppercase;
   line-height: 1.0em;
 }
@@ -363,6 +366,17 @@ section h2 b {
   font-weight: 400;
   font-variant: small-caps;
 } 
+
+#wedding div h5 {
+  font-size: 26px;
+  font-weight: 300;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+#wedding div p {
+  margin-bottom: 1.0em;
+}
 
 #wedding div p span {
   display: block;
