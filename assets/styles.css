@@ -91,13 +91,13 @@ body {
 }
 
 #wrap {
-  width: 660px;
+  width: 900px;
   margin: 0px auto 0px;
   position: relative;
   z-index: 100;
   padding: 20px;
-  background: #FEFDFC;
-  background: hsla( 30, 50%, 99%, 0.4);
+/*  background: #FEFDFC;*/
+/*  background: hsla( 30, 50%, 99%, 0.4);*/
 }
 
 
@@ -122,7 +122,13 @@ body {
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
   margin: 0 auto 40px;
   position: relative;
-  width: 660px;
+/*  width: 660px;*/
+}
+
+#masthead {
+  width: 550px;
+  height: 100%;
+  position: relative;
 }
 
 .csstransforms #header h1 {
@@ -133,14 +139,14 @@ body {
   text-align: center;
   position: relative;
   z-index: 2;
-  font-size: 120px;
+  font-size: 105px;
   font-weight: 600;
   line-height: 0.7em;
 /*  text-shadow: 0 3px #FFFAF2;*/
 }
 
 .csstransforms #header .erin {
-  padding-top: 120px;
+  padding-top: 130px;
 }
 
 
@@ -212,6 +218,12 @@ body {
   line-height: 40px;
 }
 
+#header .big-pic {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /******* Section headers ********/
 
 section {
@@ -250,78 +262,49 @@ section h2 b {
 /******* Story ********/
 
 
-/*#story .married {
-  color: #DC8;
-  border-top: 4px solid;
-  border-bottom: 4px solid;
-  font-size: 44px;
-  text-align: center;
-  margin-bottom: 40px;
-  line-height: 1.0em;
-  text-transform: uppercase;
+#story p {
+  line-height: 1.4em;
 }
 
-
-#story .married b {
-  display: block;
-  font-size: 70px;
-  line-height: 1.0em;
-}*/
-
-
-
-#story p span {
+/*#story p span {
   display: block;
   line-height: 1.4em;
   font-style: italic;
   text-align: center;
-  margin-bottom: 0.5em;
-}
+}*/
 
 
 
 #story i {
-  display: block;
-  text-align: block;
-  font-size: 53px;
-  text-align: center;
+/*  display: block;*/
+/*  font-size: 53px;*/
   color: #DC8;
+/*  font-size: 1.3em;*/
 }
 
 #story .jmu {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 54px;
-  line-height: 1.2em;
-}
-
-#story .jmu span {
-  display: block;
-  font-size: 24px;
-  line-height: 1.2em;
-  letter-spacing: 1.2em;
-  font-weight: 700;
-  text-align: center;
-  padding-left: 1.0em;
-  font-style: normal;
+/*  font-size: 54px;
+  line-height: 1.2em;*/
 }
 
 #story .london {
-  font-size: 110px;
+/*  font-size: 110px;*/
   font-weight: 700;
-  line-height: 0.7em;
+/*  line-height: 0.7em;*/
 }
 
 #story .dc {
-  font-size: 44px;
+/*  font-size: 44px;*/
   font-weight: 800;
-  line-height: 1.4em;
+/*  line-height: 1.4em;*/
 }
 
 #story .roosevelt {
-  font-size: 38px;
+/*  font-size: 38px;*/
   text-transform: uppercase;
-  line-height: 1.0em;
+/*  line-height: 1.0em;*/
 }
 
 /******* Wedding ********/
