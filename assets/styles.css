@@ -371,6 +371,37 @@ section h2 b {
   display: block;
 }
 
+/******* Wedding ********/
+
+#registries ul {
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+#registries li {
+  list-style: none;
+  float: left;
+  width: 290px;
+  margin-right: 15px;
+}
+#registries .macys { margin-right: 0; }
+
+#registries li a {
+  display: block;
+  height: 70px;
+  background-image: url('../img/registries.png');
+  text-indent: -999em;
+}
+
+
+
+#registries .crateandbarrel a { background-position: 0px 0px; }
+#registries .crateandbarrel a:hover { background-position: -290px 0px;}
+#registries .potterybarn a { background-position: 0px -70px; }
+#registries .potterybarn a:hover { background-position: -290px -70px; }
+#registries .macys a { background-position: 0px -140px; }
+#registries .macys a:hover { background-position: -290px -140px; }
+
 .coming-soon {
   border: 1px solid #DC8;
   text-align: center;
@@ -380,3 +411,4 @@ section h2 b {
   letter-spacing: 0.5em;
   font-weight: 300;
 }
+
