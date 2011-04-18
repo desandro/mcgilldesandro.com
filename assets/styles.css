@@ -232,21 +232,25 @@ section {
 }
 
 section h2 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding: 10px 0;
+  padding: 50px 0 10px;
   margin-bottom: 30px;
+  background: url('../img/divider-top.png') center top no-repeat;
+}
+
+section h2 i {
+  display: block;
+  height: 50px;
+  background: url('../img/divider-bottom.png') center bottom no-repeat;
 }
 
 section h2 span {
   display: block;
-  font-size: 28px;
+  font-size: 20px;
   letter-spacing: 0.9em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
-  line-height: 50px;
-  padding-left: 0.5em;
+  padding:  8px 0 0px 0.5em;
 }
 
 section h2 b {
@@ -254,9 +258,10 @@ section h2 b {
   text-align: center;
 /*  text-transform: capitalize;*/
   font-weight: 800;
-  font-size: 76px;
+  font-size: 56px;
   text-transform: uppercase;
-  line-height: 1.0em;
+  letter-spacing: 0.06em;
+  padding: 8px 0 4px;
 /*  font-style: italic;*/
 }
 
