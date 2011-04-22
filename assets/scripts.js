@@ -177,6 +177,6 @@ Typekit.load({
   inactive: function(){
     MD.fontsReady();
   }
-})
+});
 
 })()

@@ -54,6 +54,7 @@ body {
 ,#header h1 .amp
 /*,#story .married*/
 ,#story .roosevelt
+,#wedding h3.date
 
 {
   font-family: 'Hellenic Wide', "hellenic-wide-1","hellenic-wide-2", serif;
@@ -100,6 +101,13 @@ body {
 /*  background: hsla( 30, 50%, 99%, 0.4);*/
 }
 
+a { color: #B41; }
+a:hover { 
+  color: white;
+  background: #D85312;
+  text-decoration: none;
+}
+
 
 /******* CSS transforms header *******/
 
@@ -116,7 +124,7 @@ body {
 
 /******* CSS transforms header *******/
 
-.csstransforms #header {
+#header {
 /*  width: 400px;*/
   height: 400px;
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
@@ -134,24 +142,29 @@ body {
 .csstransforms #header h1 {
 }
 
-.csstransforms #header .name {
+#header .name {
   display: block;
   text-align: center;
   position: relative;
   z-index: 2;
-  font-size: 105px;
+  font-size: 60px;
   font-weight: 600;
-  line-height: 0.7em;
+  font-style: italic;
 /*  text-shadow: 0 3px #FFFAF2;*/
 }
 
-.csstransforms #header .erin {
-  padding-top: 130px;
+.wf-active #header .name {
+  font-size: 105px; 
+  font-style: normal;
+  line-height: 0.7em;
 }
 
+#header .erin { padding-top: 100px; }
+.wf-active #header .erin { padding-top: 130px; }
 
 
-.csstransforms #header .amp {
+
+#header .amp {
   display: block;
   font-size: 300px;
   text-align: center;
@@ -167,15 +180,34 @@ body {
   top: 0;
 }
 
-.csstransforms #header .married {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+#header .secondary {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+#header .date { margin-top: 20px; }
+#header .location { margin-bottom: 10px; }
+
+#header .married {
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
   color: #DC8;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.csstransforms #header .married,
+.csstransforms #header .secondary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 0;
+  margin: 0;
 }
 
 .csstransforms #header .married .char {
@@ -192,14 +224,8 @@ body {
   padding-left: 5px;
 }
 
-#header .secondary {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 20px;
-}
+
+
 
 /*#header .location {
   right: 0;
@@ -270,45 +296,29 @@ section h2 b {
 
 #story p {
   line-height: 1.4em;
+  width: 420px;
+  margin-right: 60px;
+  float: left;
 }
 
-/*#story p span {
-  display: block;
-  line-height: 1.4em;
-  font-style: italic;
-  text-align: center;
-}*/
-
-
-
-#story i {
-/*  display: block;*/
-/*  font-size: 53px;*/
-  color: #DC8;
-/*  font-size: 1.3em;*/
-}
+#story p.last { margin-right: 0; }
 
 #story .jmu {
   text-transform: uppercase;
   font-weight: 900;
-/*  font-size: 54px;
-  line-height: 1.2em;*/
 }
 
 #story .london {
-/*  font-size: 110px;*/
   font-weight: 700;
-/*  line-height: 0.7em;*/
+  font-size: 30px;
 }
 
 #story .dc {
-/*  font-size: 44px;*/
   font-weight: 800;
-/*  line-height: 1.4em;*/
 }
 
 #story .roosevelt {
-/*  font-size: 38px;*/
+  font-size: 14px;
   text-transform: uppercase;
 /*  line-height: 1.0em;*/
 }
@@ -320,13 +330,29 @@ section h2 b {
 }
 
 #wedding div {
-  width: 300px;
+  width: 420px;
   float: left;
   text-align: center;
 }
 
 #ceremony {
   margin-right: 60px;
+}
+
+#wedding h3.date {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#wedding h3.date span {
+  display: block;
+}
+
+#wedding h3.date .day {
+  font-size: 36px;
 }
 
 #wedding div h3 {
@@ -338,10 +364,9 @@ section h2 b {
 #wedding div h3 * { display: block; }
 
 #wedding div h3 b {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
   letter-spacing: 0.1em;
-  margin-bottom: 4px;
 }
 
 #wedding div h3 span {
@@ -393,6 +418,7 @@ section h2 b {
   text-indent: -999em;
 }
 
+#registries li a:hover { background-color: #E6DCB3; }
 
 
 #registries .crateandbarrel a { background-position: 0px 0px; }
@@ -412,3 +438,16 @@ section h2 b {
   font-weight: 300;
 }
 
+
+
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content: '';
+  display: block;
+  overflow: hidden;
+}
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
