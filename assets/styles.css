@@ -251,6 +251,12 @@ a:hover {
   top: 0;
 }
 
+.photo-credit {
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+}
+
 /******* Section headers ********/
 
 section {
