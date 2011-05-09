@@ -126,7 +126,7 @@ a:hover {
 
 #header {
 /*  width: 400px;*/
-  height: 400px;
+/*  height: 400px;*/
 /*  background: hsla( 30, 100%, 50%, 0.1 );*/
   margin: 0 auto 40px;
   position: relative;
@@ -134,8 +134,8 @@ a:hover {
 }
 
 #masthead {
-  width: 550px;
-  height: 100%;
+  width: 100%;
+  height: 400px;
   position: relative;
 }
 
@@ -154,13 +154,13 @@ a:hover {
 }
 
 .wf-active #header .name {
-  font-size: 105px; 
+  font-size: 120px; 
   font-style: normal;
   line-height: 0.7em;
 }
 
 #header .erin { padding-top: 100px; }
-.wf-active #header .erin { padding-top: 130px; }
+.wf-active #header .erin { padding-top: 120px; }
 
 
 
