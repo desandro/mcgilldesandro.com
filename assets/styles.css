@@ -402,6 +402,10 @@ section h2 b {
   display: block;
 }
 
+#wedding .advise {
+  font-style: italic;
+}
+
 /******* Wedding ********/
 
 #registries ul {
