@@ -394,6 +394,7 @@ section h2 b {
   font-weight: 300;
   font-variant: small-caps;
   letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
 }
 
 #wedding div p {
@@ -402,6 +403,10 @@ section h2 b {
 
 #wedding div p span {
   display: block;
+}
+
+#wedding .advise {
+  font-style: italic;
 }
 
 /******* Wedding ********/
