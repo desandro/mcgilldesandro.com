@@ -186,6 +186,8 @@ a:hover {
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.1em;
+  position: relative;
+  z-index: 2;
 }
 
 #header .date { margin-top: 20px; }
