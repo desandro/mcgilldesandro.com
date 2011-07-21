@@ -40,7 +40,7 @@ body {
 ,section h2 span
 ,#header .married
 ,#wedding div h3
-,#wedding div h4
+,.itinerary div h4
 ,.coming-soon
 ,#wedding div h5
 {
@@ -337,13 +337,25 @@ section h2 b {
   overflow: auto;
 }
 
-#wedding div {
-  width: 420px;
+.itinerary div {
   float: left;
   text-align: center;
 }
 
-#ceremony {
+#wedding div {
+  width: 420px;
+}
+
+#accomodations div {
+  width: 360px;
+  padding: 22px;
+  border: 4px double;
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.5 );
+  height: 340px;
+}
+
+.itinerary .col-left {
   margin-right: 60px;
 }
 
@@ -363,33 +375,33 @@ section h2 b {
   font-size: 36px;
 }
 
-#wedding div h3 {
+.itinerary div h3 {
   color: #DC8;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
-#wedding div h3 * { display: block; }
+.itinerary div h3 * { display: block; }
 
-#wedding div h3 b {
+.itinerary div h3 b {
   font-size: 36px;
   font-weight: 300;
   letter-spacing: 0.1em;
 }
 
-#wedding div h3 span {
+.itinerary div h3 span {
   letter-spacing: 0.5em;
   font-size: 17px;
   font-weight: 400;
 }
 
-#wedding div h4 {
+.itinerary div h4 {
   font-size: 40px;
   font-weight: 400;
   font-variant: small-caps;
 } 
 
-#wedding div h5 {
+.itinerary div h5 {
   font-size: 26px;
   font-weight: 300;
   font-variant: small-caps;
@@ -397,15 +409,11 @@ section h2 b {
   margin-bottom: 0.5em;
 }
 
-#wedding div p {
+.itinerary div p {
   margin-bottom: 1.0em;
 }
 
-#wedding div p span {
-  display: block;
-}
-
-#wedding .advise {
+.itinerary .advise {
   font-style: italic;
 }
 
