@@ -417,7 +417,48 @@ section h2 b {
   font-style: italic;
 }
 
-/******* Wedding ********/
+/******* Directions ********/
+
+#directions .map {
+  width: 420px;
+  float: left;
+}
+
+#directions .routes {
+  width: 420px;
+  float: left;
+  margin-right: 60px;
+}
+
+#directions .routes h3 {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#directions .routes b { font-weight: bold; }
+
+#directions .routes ul {
+  margin-bottom: 1.0em;
+  padding-left: 1.0em;
+}
+
+#directions .routes li {
+  font-size: 14px;
+  line-height: 1.45em;
+}
+
+#directions .map iframe {
+  border: 1px solid;
+  margin-bottom: 1.0em;
+}
+
+#directions .map p {
+  font-style: italic;
+  text-align: center;
+}
+
+/******* Registries ********/
 
 #registries ul {
   height: 70px;
