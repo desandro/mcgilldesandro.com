@@ -24,7 +24,7 @@ var getStyleProperty = (function(){
         prefixed;
  
     // test standard property first
-    if (typeof style[propName] == 'string') return propName;
+    if (typeof style[propName] === 'string') return propName;
  
     // capitalize
     propName = propName.charAt(0).toUpperCase() + propName.slice(1);
@@ -32,7 +32,7 @@ var getStyleProperty = (function(){
     // test vendor specific properties
     for (var i=0, l=prefixes.length; i<l; i++) { 
       prefixed = prefixes[i] + propName; 
-      if (typeof style[prefixed] == 'string') return prefixed; 
+      if (typeof style[prefixed] === 'string') return prefixed; 
     } 
   } 
  
@@ -77,8 +77,7 @@ Wedder.prototype.DOMContentLoaded = function( event ) {
   var h1 = document.querySelector('#header h1'),
       header = document.getElementById('header');
   
-  
-  this.erinElem = h1.querySelector('.erin'),
+  this.erinElem = h1.querySelector('.erin');
   this.davidElem = h1.querySelector('.david');
   
   this.dateElem = header.querySelector('.date');
@@ -102,19 +101,19 @@ Wedder.prototype.parseCharacters = function( elem ) {
       fragment = document.createDocumentFragment();
   
   for ( var i=0, len = text.length; i < len; i++ ) {
-    var character = text[i];
+    var character = text[i],
         span = document.createElement('span');
     span.className = 'char c' + (i+1);
     span.textContent = character;
     
     // replace spaces with no-breaking spaces
-    if ( character == ' ' ) {
-      span.innerHTML = '&nbsp;'
+    if ( character === ' ' ) {
+      span.innerHTML = '&nbsp;';
     }
     
     fragment.appendChild( span );
 
-  };
+  }
   
   elem.innerHTML = '';
   
@@ -147,11 +146,11 @@ Wedder.prototype.radialType = function ( elem, y, padding ) {
     charSpan.transform('rotate(' + (angle) + 'rad) translate(' + 0 + 'px, ' + y + 'px)');
 
 
-  };
+  }
   
   var elemAngle = -angle/2 - charAngles[0]/2;
   
-  elem.transform('rotate(' + elemAngle + 'rad)')
+  elem.transform('rotate(' + elemAngle + 'rad)');
   
   
 };
@@ -179,4 +178,4 @@ Typekit.load({
   }
 });
 
-})()
+})();
