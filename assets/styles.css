@@ -430,7 +430,8 @@ section h2 b {
   margin-right: 60px;
 }
 
-#directions .routes h3 {
+#directions .routes h3,
+#parking h3 {
   font-size: 16px;
   margin-bottom: 0.5em;
   font-weight: bold;
@@ -453,9 +454,19 @@ section h2 b {
   margin-bottom: 1.0em;
 }
 
-#directions .map p {
+#directions .link-to-map {
   font-style: italic;
   text-align: center;
+  margin-bottom: 1.0em;
+}
+
+#parking {
+  border-top: 1px dotted;
+  padding-top: 1.0em;
+}
+
+#parking p {
+  margin-bottom: 0.8em;
 }
 
 /******* Registries ********/
