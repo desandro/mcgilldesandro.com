@@ -44,6 +44,7 @@ body {
 ,.itinerary div h4
 ,.coming-soon
 ,#wedding div h5
+,#directions .routes h3
 {
   font-family: 'Mostra Nuova', "mostra-nuova-1","mostra-nuova-2", 'Futura', 'Century Gothic', 'Helvetica', Arial, sans-serif;
   
@@ -435,23 +436,46 @@ section h2 b {
   margin-right: 60px;
 }
 
-#directions .routes h3,
-#parking h3 {
+#directions .routes h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 1.0em;
+  font-weight: 600;
+  border-top: 1px dotted;
+  padding-top: 0.5em;
+}
+
+#directions .routes h4,
+#parking h4 {
   font-size: 16px;
   margin-bottom: 0.5em;
   font-weight: bold;
 }
 
+#directions .routes p {
+  margin-bottom: 0.8em;
+}
+
+
+#directions .routes p,
+#directions .routes li {
+  font-size: 14px;
+  line-height: 1.45em;
+}
+
 #directions .routes b { font-weight: bold; }
+#directions .routes i { font-style: italic; }
 
 #directions .routes ul {
   margin-bottom: 1.0em;
   padding-left: 1.0em;
 }
 
-#directions .routes li {
-  font-size: 14px;
-  line-height: 1.45em;
+#directions .shuttle {
+  font-style: italic;
+  font-weight: bold;
 }
 
 #directions .map iframe {
@@ -470,9 +494,6 @@ section h2 b {
   padding-top: 1.0em;
 }
 
-#parking p {
-  margin-bottom: 0.8em;
-}
 
 /******* Registries ********/
 
